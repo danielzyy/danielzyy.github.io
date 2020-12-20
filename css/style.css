@@ -1,0 +1,79 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* CSS variables */
+@import url(./partials/_variables.css);
+/* Global variables */
+@import url(./partials/_global.css);
+
+/* Navigation */
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 20rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font-family: var(--roboto);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+/* End Navigation */
+
+/* Banner Area */
+.main .banner {
+   background: url(../img/banner-background.png) no-repeat;
+   background-position: 100% 50%;
+   background-size:80%;
+}
+
+.main .banner .title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.main .banner .title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.main .banner .title h1{
+    font-size: 5rem;
+}
+
+.main .banner .title h4{
+    font-size: 1.5rem;
+}
+
+.main .banner .terminal {
+    margin: 10rem 0 0 0;
+    width: 50rem;
+    height: 20rem;
+    border: thick solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #743ad5, #d53a3a);
+}
+
+
+/* End Banner Area */
