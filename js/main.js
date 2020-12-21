@@ -53,7 +53,7 @@ $(document).ready(() => {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
         document.body.appendChild(css);
     };
-
+    
 	// $('.gallery-item .thumbnail').on('mouseenter', event => {
 	// 	$(event.currentTarget).animate({
 	// 		opacity:1,

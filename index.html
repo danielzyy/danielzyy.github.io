@@ -23,7 +23,6 @@
     <header class="header_area">
         <div class="main-menu">
             <nav class="navbar navbar-expand-lg navbar-light">
-                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -55,7 +54,6 @@
     <!-- ========================== End Navbar Area ========================== -->
     <!-- ========================== Start Main Area ========================== -->
     <main class="main">
-
         <!-- ========================== Start Banner Area ========================== -->
         <section class="banner">
             <div class="container">
@@ -68,13 +66,16 @@
                         <div class="buttons">
                             <div class="flex-row flex-wrap">
                                 <button type="button" class="btn button btn-outline-primary m-2 text-uppercase">Resume</button>
-                                <button type="button" class="btn button btn-outline-success m-2 text-uppercase">Terminal</button>
+                                <span data-toggle="button" data-target="button">
+                                    <button type="button" class="btn button btn-outline-success m-2 text-uppercase" data-toggle="collapse" href="#terminal-collapse" role="collapse" aria-expanded="false" aria-controls="terminal-collapse">Terminal</button>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 terminal">
+                    <div class="col-lg-12 col-md-12 terminal collapse multi-collapse" id="terminal-collapse">
+                        <div class="hide">
                         <script>
                             $('div.terminal').terminal({
                                 commands: function() {
@@ -104,6 +105,7 @@
                                 greetings: '[[b;green;]Hi there! Welcome to my personal website!]\nType \'[[;red;]commands]\' into the terminal to get to see the list of commands, and get to know more about me!'
                             });
                         </script>
+                        </div>
                         <!-- <img src="./img/terminal.gif" alt="img-banner" class="img-fluid"> -->
                     </div>
                 </div>
