@@ -1,7 +1,7 @@
 /* Global Classes */
 
 .title-text{
-    font: normal bold 50px 'Roboto', sans-serif;;
+    font: normal bold 50px var(--roboto);
 }
 
 .hide{
@@ -15,7 +15,7 @@
 /* Buttons */
 .button{
     padding: .8rem 2.2rem;
-    font: normal 550 18px/20px 'Roboto', sans-serif;;
+    font: normal 550 18px/20px var(--roboto);
     position: relative;
     border-width: 2px;
 }

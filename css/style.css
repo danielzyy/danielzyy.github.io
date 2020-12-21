@@ -1,11 +1,16 @@
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
 /* CSS variables */
 @import url(./partials/_variables.css);
 /* Global variables */
 @import url(./partials/_global.css);
 
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url(./fonts/Roboto-Medium.ttf);
+  }
 /* Navigation */
 .header_area {
     align-items: center;
@@ -20,7 +25,7 @@
 }
 
 .header_area .main-menu .nav-item .nav-link{
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--roboto);
     text-transform: uppercase;
     font-weight: 500;
     padding: 1rem;
