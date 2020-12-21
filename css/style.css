@@ -7,7 +7,6 @@ html, body{
 }
 
 /* CSS variables */
-
 :root {
     --primary-color: #4458dc;
     --primary-color2: #854fee;
@@ -17,7 +16,6 @@ html, body{
     --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
     --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
     --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
-
 
     /* font family variables */
     --roboto: 'Roboto', sans-serif;
@@ -53,23 +51,34 @@ html, body{
 }
   
 /* Navigation */
-.header_area {
-    align-items: center;
+
+.header_area .main-menu .navbar .navbar-nav .navbar-brand {
+    margin-left: 7rem;
+    margin-right: 6rem;
+    transform: translateX(-50%);
+    left: 50%;
+    
 }
-.header_area .main-menu .navbar .navbar-brand{
-    padding: 0 2rem 0 5rem;
+.header_area .main-menu .navbar .navbar-nav .navbar-brand img{
+    /* padding: 5rem; */
+    height: 4.5rem;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    
 }
 
 .header_area .main-menu .navbar{
     align-content: center;
-    /* padding: 1rem 20rem; */
+    padding: 1rem;
 }
 
 .header_area .main-menu .nav-item .nav-link{
     font-family: var(--roboto);
     text-transform: uppercase;
     font-weight: 500;
-    padding: 1rem;
+    font-size: 1.5rem;
+    padding: 2rem;
     color: var(--title-color);
 }
 
