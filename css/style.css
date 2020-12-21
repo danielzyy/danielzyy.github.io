@@ -1,16 +1,57 @@
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
-/* CSS variables */
-@import url(./partials/_variables.css);
-/* Global variables */
-@import url(./partials/_global.css);
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
 
+/* CSS variables */
+
+:root {
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color: #141313;
+    --text-color: #777777;
+    --border-color: #201f1f17;
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
+    --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+
+
+    /* font family variables */
+    --roboto: 'Roboto', sans-serif;
+}
+
+/* Global variables */
+.title-text{
+    font: normal bold 50px var(--roboto);
+}
+
+.hide{
+	display: none;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* Buttons */
+.button{
+    padding: .8rem 2.2rem;
+    font: normal 550 18px/20px var(--roboto);
+    position: relative;
+    border-width: 2px;
+}
+
+/* Fonts */
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     src: url(./fonts/Roboto-Medium.ttf);
-  }
+}
+  
 /* Navigation */
 .header_area {
     align-items: center;
