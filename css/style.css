@@ -7,12 +7,16 @@
 @import url(./partials/_global.css);
 
 /* Navigation */
+.header_area {
+    align-items: center;
+}
 .header_area .main-menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
 }
 
 .header_area .main-menu .navbar{
-    padding: 1rem 20rem;
+    align-content: center;
+    /* padding: 1rem 20rem; */
 }
 
 .header_area .main-menu .nav-item .nav-link{
@@ -30,7 +34,7 @@
 }
 
 .header_area .main-menu .navbar-nav a:hover{
-    background: var(--gradient-color);
+    background: var(--primary-color);
     -webkit-background-clip: text;
     background-clip: text;
 }
@@ -40,34 +44,53 @@
 .main .banner {
    background: url(../img/banner-background.png) no-repeat;
    background-position: 100% 50%;
-   background-size:80%;
+   background-size:60%;
 }
-
+.main .banner .title {
+    text-align: center;
+}
+.main .banner .title h1{
+    margin-top: 5%;
+    /* padding-top: 10%; */
+    font-size: 6rem;
+}
 .main .banner .title h3{
-    padding-top: 35%;
+    font-size: 2rem;
+    padding-top: 3%;
     font-weight: 500;
 }
 
-.main .banner .title h3::after{
-    content: " ";
+.main .banner .title .buttons{
+    padding: 1rem;
+    /* align-self: center; */
+}
+
+
+@media only screen and (min-device-width: 1080px) {
+.main .banner .title .buttons .flex-row::before{
+    content: "";
     height: 2px;
-    width: 18vw;
+    width: 12rem;
     background: black;
     display: inline-block;
-    margin-left: 5%;
-    transform: translateY(-10px);
+    transform: translateY(-3px);
+}
+.main .banner .title .buttons .flex-row::after{
+    content: "";
+    height: 2px;
+    width: 12rem;
+    background: black;
+    display: inline-block;
+    transform: translateY(-3px);
+}
 }
 
-.main .banner .title h1{
-    font-size: 5rem;
-}
-
-.main .banner .title h4{
+/* .main .banner .title h4{
     font-size: 1.5rem;
-}
+} */
 
 .main .banner .terminal {
-    margin: 10rem 0 0 0;
+    margin: 5rem 0 0 0;
     width: 50rem;
     height: 20rem;
     border: thick solid;
