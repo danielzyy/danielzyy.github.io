@@ -71,40 +71,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 terminal collapse multi-collapse" id="terminal-collapse">
-                        <div class="hide">
-                        <script>
-                            $('div.terminal').terminal({
-                                commands: function() {
-                                    var commandList = ['school', 'github', 'cat'];
-                                    this.echo('[[b;red;]Commands List:]');
-                                    for(i = 0;i<commandList.length;i++) {
-                                        this.echo('- [[;green;]'+commandList[i] + ']');
+                <div class="row collapse terminal-wrapper" id="terminal-collapse">
+                    <div class="col-lg-12 col-md-12 ">
+                        <div class="terminal">
+                            <script>
+                                $('div.terminal').terminal({
+                                    commands: function() {
+                                        var commandList = ['school', 'github', 'cat'];
+                                        this.echo('[[b;red;]Commands List:]');
+                                        for(i = 0;i<commandList.length;i++) {
+                                            this.echo('- [[;green;]'+commandList[i] + ']');
+                                        }
+                                    },
+                                    hello: function(what) {
+                                        this.echo('[[;green;]Hello, ' + what +
+                                                '!]');
+                                    },
+                                    school: function() {
+                                        this.echo('University of Waterloo - Mechatronics Engineering');
+                                    },
+                                    github: function() {
+                                        this.echo('[[!;;;;https://github.com/danielzyy]https://github.com/danielzyy]');
+                                    },
+                                    cat: function() {
+                                        this.echo('[[@;;;;https://placekitten.com/'+Math.ceil(Math.random()*300)+'/'+Math.ceil(Math.random()*300)+']]');
+                                    },
+                                    poop: function() {
+                                        this.echo('[[b;red;white]hello'+' world]');
                                     }
-                                },
-                                hello: function(what) {
-                                    this.echo('[[;green;]Hello, ' + what +
-                                              '!]');
-                                },
-                                school: function() {
-                                    this.echo('University of Waterloo - Mechatronics Engineering');
-                                },
-                                github: function() {
-                                    this.echo('[[!;;;;https://github.com/danielzyy]https://github.com/danielzyy]');
-                                },
-                                cat: function() {
-                                    this.echo('[[@;;;;https://placekitten.com/'+Math.ceil(Math.random()*300)+'/'+Math.ceil(Math.random()*300)+']]');
-                                },
-                                poop: function() {
-                                    this.echo('[[b;red;white]hello'+' world]');
-                                }
-                            }, {
-                                greetings: '[[b;green;]Hi there! Welcome to my personal website!]\nType \'[[;red;]commands]\' into the terminal to get to see the list of commands, and get to know more about me!'
-                            });
-                        </script>
+                                }, {
+                                    greetings: '[[b;green;]Hi there! Welcome to my personal website!]\nType \'[[;red;]commands]\' into the terminal to get to see the list of commands, and get to know more about me!'
+                                });
+                            </script>
                         </div>
-                        <!-- <img src="./img/terminal.gif" alt="img-banner" class="img-fluid"> -->
                     </div>
                 </div>
             </div>
@@ -112,11 +111,19 @@
         <!-- ========================== End Banner Area ========================== -->
         <!-- ========================== Start About Area ========================== -->
         <section class="about-area">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <div class="about-image">
                             <img src="/img/profile.png" alt="About me" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="shadow card text-white bg-primary" >
+                            <div class="shadow card-header text-uppercase">About Me</div>
+                            <div class="card-body">
+                                <h5 class="card-text">Hey there! Thanks for visiting my online portfolio! I'm Daniel, a first year Mechatronics student studying at the University of Waterloo. I enjoy using technology to develop and improve projects that can help tackle real-world issues.</h5>
+                            </div>
                         </div>
                     </div>
                 </div>

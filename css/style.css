@@ -21,6 +21,38 @@ html, body{
     --roboto: 'Roboto', sans-serif;
 }
 
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 /* Global variables */
 .title-text{
     font: normal bold 50px var(--roboto);
@@ -59,15 +91,21 @@ html, body{
     left: 50%;
     
 }
-.header_area .main-menu .navbar .navbar-nav .navbar-brand img{
-    /* padding: 5rem; */
-    height: 4.5rem;
-    transform: translateX(-50%);
-    left: 50%;
-    position: absolute;
-    
-}
 
+@media (max-width: 992px){
+    .header_area .main-menu .navbar .navbar-nav .navbar-brand img{
+        display: none;
+    }
+} 
+@media (min-width: 992px){
+    .header_area .main-menu .navbar .navbar-nav .navbar-brand img{
+        /* padding: 5rem; */
+        height: 3.5rem;
+        transform: translateX(-50%);
+        left: 50%;
+        position: absolute;
+    }
+}
 .header_area .main-menu .navbar{
     align-content: center;
     padding: 1rem;
@@ -76,10 +114,11 @@ html, body{
 .header_area .main-menu .nav-item .nav-link{
     font-family: var(--roboto);
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 550;
     font-size: 1.5rem;
-    padding: 2rem;
+    padding: 1rem;
     color: var(--title-color);
+    transition: 0.5s;
 }
 
 .header_area .main-menu .navbar-nav .active a{
@@ -89,9 +128,10 @@ html, body{
 }
 
 .header_area .main-menu .navbar-nav a:hover{
-    background: var(--primary-color);
+    color: var(--primary-color);
+    /* background: var(--primary-color);
     -webkit-background-clip: text;
-    background-clip: text;
+    background-clip: text; */
 }
 /* End Navigation */
 
@@ -108,17 +148,17 @@ html, body{
     margin-top: 5%;
     padding-top: 10%;
     font-size: 10rem;
+    font-weight: 400;
     line-height: 10rem;
 }
 .main .banner .title h3{
-    font-size: 2rem;
-    padding-top: 3%;
+    font-size: 2.5rem;
+    padding-top: 2rem;
     font-weight: 500;
 }
 
 .main .banner .title .buttons{
-    padding: 1rem;
-    /* align-self: center; */
+    padding: 2rem;
 }
 
 /* Turn on lines only for large screens */
@@ -144,15 +184,36 @@ html, body{
 /* .main .banner .title h4{
     font-size: 1.5rem;
 } */
-
 .main .banner .terminal {
-    margin: 2rem 1.5rem 1.5rem 1.5rem;
-    width: 50rem;
+    margin: 1rem 1.5rem 1.5rem 1.5rem;
     height: 15rem;
     border: thick solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(to right, #743ad5, #d53a3a);
 }
-
-
 /* End Banner Area */
+
+/* Start About Area */
+.main .about-area{
+    text-align: center;
+}
+.main .about-area img{
+    animation: slideInFromLeft 0.5s ease-in;
+    width: 30rem;
+}
+.main .about-area .card{
+    animation: slideInFromRight 0.5s ease-in;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.main .about-area .card-header{
+    font-weight: 550;
+    font-size: 3rem;
+}
+
+.main .about-area .card h5{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+/* End About Area */
