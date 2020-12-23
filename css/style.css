@@ -66,6 +66,15 @@ html, body{
     text-transform: uppercase;
 }
 
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
 /* Buttons */
 .button{
     padding: .8rem 2.2rem;
@@ -217,3 +226,55 @@ html, body{
     font-weight: 400;
 }
 /* End About Area */
+
+/* Start Project Area */
+
+.main .project-area{
+    padding: 4rem 0;
+}
+
+.main .project-area h1{
+    font-size: 3rem;
+}
+
+.main .project-area .button-group .active{
+    background-color: #43caff;
+    color: white;
+    transition: 0.5s;
+}
+
+.main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 550 24px/24px var(--roboto);
+    padding: 1rem;
+    /* padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem; */
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.main .project-area .button-group button:hover{
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+
+.main .project-area .button-group button + button{
+    margin-left: 3.5rem;
+}
+
+.main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/25px var(--roboto);
+}
+
+.main .project-area .grid .our-project img{
+    max-width: 22rem;
+}
+
+.main .project-area .grid .our-project img:hover{
+    filter: brightness(1.1) drop-shadow(0px 0px 15px #ababab);
+    transition: 0.5s;
+}
+/* End Project Area */
