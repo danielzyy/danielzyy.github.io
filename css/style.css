@@ -246,6 +246,8 @@ button:hover
 /* Start About Area */
 .main .about-area{
     text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 .main .about-area img{
     animation: slideInFromLeft 0.5s ease-in;
@@ -259,7 +261,7 @@ button:hover
 
 .main .about-area .card-header{
     font-weight: 550;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .main .about-area .card h5{
@@ -275,7 +277,7 @@ button:hover
 }
 
 .main .project-area h1{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .main .project-area .button-group{
@@ -327,3 +329,87 @@ button:hover
 }
 
 /* End Project Area */
+
+/* Start Contact Area */
+
+.contact-area .contact-title{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.contact-area .contact-text{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.socials{
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+}
+
+.contact-area .contact-image {
+    text-align: center;
+}
+/* Scale down images for smaller screens */
+@media screen and (min-device-width: 536px) {
+    .contact-area .contact-image img{
+        width: 20rem;
+    }
+    .socials li a {
+        line-height: 75px;
+        display: block;
+        text-decoration: none;
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+    
+}
+
+@media screen and (max-device-width: 535px) {
+    .contact-area .contact-image img{
+        width: 17rem;
+    }
+    .socials li a {
+        line-height: 75px;
+        display: block;
+        text-decoration: none;
+        font-weight: 450;
+        font-size: 7vw;
+        }    
+}
+
+.socials img{
+    width: 60px;
+}
+
+
+.socials li a.email {
+    color: #e3133d;
+}
+.socials li a.email:hover {
+    filter: brightness(1.1) drop-shadow(5px 0px 5px #e3133d80);
+    transition: 0.3s;
+}
+.socials li a.github {
+    color:#171516;
+}
+.socials li a.github:hover {
+    filter: brightness(1.1) drop-shadow(5px 0px 5px #17151680);
+    transition: 0.3s;
+}
+.socials li a.devpost {
+    color:#003e54;
+}
+.socials li a.devpost:hover {
+    filter: brightness(1.1) drop-shadow(5px 0px 5px #003e5480);
+    transition: 0.3s;
+}
+.socials li a.linkedin {
+    color: #0982c0;
+}
+.socials li a.linkedin:hover {
+    filter: brightness(1.1) drop-shadow(5px 0px 5px #0982c080);
+    transition: 0.3s;
+}
+/* End Contact Area */
