@@ -165,9 +165,6 @@ button:hover
 
 .header_area .main-menu .navbar-nav a:hover{
     color: var(--primary-color);
-    /* background: var(--primary-color);
-    -webkit-background-clip: text;
-    background-clip: text; */
 }
 /* End Navigation */
 
@@ -198,8 +195,6 @@ button:hover
 
 @media screen and (max-device-width: 767px) {
     .main .banner .title h1{
-        /* margin-top: 2%;
-        padding-top: 5%; */
         font-size: 22vw;
         font-weight: 400;
     }
@@ -244,11 +239,7 @@ button:hover
 /* End Banner Area */
 
 /* Start About Area */
-.main .about-area{
-    text-align: center;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
+
 .main .about-area img{
     animation: slideInFromLeft 0.5s ease-in;
     width: 30rem;
@@ -258,26 +249,56 @@ button:hover
     margin-top: 3rem;
     text-align: center;
 }
-
-.main .about-area .card-header{
-    font-weight: 550;
-    font-size: 4rem;
+@media screen and (min-device-width: 536px) {
+    .main .about-area{
+        text-align: center;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    .main .about-area .card-header{
+        font-weight: 550;
+        font-size: 4rem;
+    }
+    .main .about-area .card h5{
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
 }
 
-.main .about-area .card h5{
-    font-size: 1.7rem;
-    font-weight: 400;
+@media screen and (max-device-width: 535px) {
+    .main .about-area{
+        text-align: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .main .about-area .card-header{
+        font-weight: 550;
+        font-size: 14vw;
+    }
+    .main .about-area .card h5{
+        font-size: 6vw;
+        font-weight: 400;
+    }
 }
+
 /* End About Area */
 
 /* Start Project Area */
-
-.main .project-area{
-    padding: 4rem 0;
+@media screen and (min-device-width: 536px) {
+    .main .project-area h1{
+        font-size: 4rem;
+        padding-bottom: 1rem;
+    }
 }
 
-.main .project-area h1{
-    font-size: 4rem;
+@media screen and (max-device-width: 535px) {
+    .main .project-area h1{
+        font-size: 14vw;
+        padding-bottom: 1rem;
+    }
+}
+.main .project-area{
+    padding-top: 4rem;
 }
 
 .main .project-area .button-group{
@@ -332,16 +353,6 @@ button:hover
 
 /* Start Contact Area */
 
-.contact-area .contact-title{
-    font-size: 4rem;
-    margin-bottom: 2rem;
-}
-
-.contact-area .contact-text{
-    font-size: 1.8rem;
-    font-weight: 400;
-}
-
 .socials{
     list-style-type: none;
     margin-top: 0;
@@ -353,36 +364,57 @@ button:hover
 }
 /* Scale down images for smaller screens */
 @media screen and (min-device-width: 536px) {
+    .contact-area .contact-title{
+        padding-top: 4rem;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    .contact-area .contact-text{
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
     .contact-area .contact-image img{
         width: 20rem;
     }
     .socials li a {
+        white-space: nowrap;
         line-height: 75px;
         display: block;
         text-decoration: none;
         font-size: 18px;
         font-size: 1.8rem;
     }
-    
+    .socials img{
+        width: 60px;
+    }
 }
 
 @media screen and (max-device-width: 535px) {
+    .contact-area .contact-title{
+        padding-top: 4rem;
+        font-size: 14vw;
+        margin-bottom: 1rem;
+    }
+    .contact-area .contact-text{
+        font-size: 7vw;
+        font-weight: 400;
+    }
     .contact-area .contact-image img{
         width: 17rem;
     }
     .socials li a {
-        line-height: 75px;
+        line-height: 60px;
         display: block;
         text-decoration: none;
-        font-weight: 450;
-        font-size: 7vw;
-        }    
+        font-size: 6vw;
+    }
+    .socials li a.email {
+        line-height: 45px;
+    }
+    .socials img{
+        width: 45px;
+    }
 }
-
-.socials img{
-    width: 60px;
-}
-
 
 .socials li a.email {
     color: #e3133d;
@@ -413,3 +445,63 @@ button:hover
     transition: 0.3s;
 }
 /* End Contact Area */
+
+/* Start Footer Area */
+footer.footer-area{
+    margin-top: 2rem;
+    background: linear-gradient(#06aefc70, #0685fc)
+    /* background-color: #0685fc; */
+}
+
+
+/* Scale down font for smaller screens */
+@media screen and (min-device-width: 536px) {
+    footer.footer-area h1{
+        padding-top: 2rem;
+        white-space: nowrap;
+        font-weight: 500;
+        font-size: 1.3rem;
+        color: white;
+    }
+}
+
+@media screen and (max-device-width: 535px) {
+    footer.footer-area h1{
+        padding-top: 2rem;
+        white-space: nowrap;
+        font-weight: 500;
+        font-size: 4vw;
+        color: white;
+    }
+}
+footer.footer-area .logo img{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 3.5rem;
+}
+footer.footer-area .top-button{
+    margin-top: 1.7rem;
+}
+footer.footer-area .top-button .scroll-top{
+    background: linear-gradient(45deg, #743ad5, #f03333);
+    filter:opacity(0.75);
+    padding: 0.7rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+footer.footer-area .scroll-top i{
+    color: #fff;
+    margin: 0;
+    position: relative;
+    top: 0.5rem;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+footer.footer-area .scroll-top:hover {
+    filter:opacity(1);
+}
+footer.footer-area .scroll-top:hover  i{
+    color: #fff;
+    top: 0.15rem;
+}
+/* End Footer Area */
