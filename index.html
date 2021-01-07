@@ -87,7 +87,7 @@
                             <script>
                                 $('div.terminal').terminal({
                                     commands: function() {
-                                        var commandList = ['school', 'github', 'cat'];
+                                        var commandList = ['school', 'hobbies', 'github', 'cat'];
                                         this.echo('[[b;red;]Commands List:]');
                                         for(i = 0;i<commandList.length;i++) {
                                             this.echo('- [[;green;]'+commandList[i] + ']');
@@ -106,9 +106,10 @@
                                     cat: function() {
                                         this.echo('[[@;;;;https://placekitten.com/'+Math.ceil(Math.random()*300)+'/'+Math.ceil(Math.random()*300)+']]');
                                     },
-                                    poop: function() {
-                                        this.echo('[[b;red;white]hello'+' world]');
+                                    hobbies: function() {
+                                        this.echo('Playing volleyball, badminton, snowboarding, and building robots [0_0]');
                                     }
+                                    
                                 }, {
                                     greetings: '[[b;green;]Hi there! Welcome to my personal website!]\nType \'[[;red;]commands]\' into the terminal to get to see the list of commands, and get to know more about me!'
                                 });
@@ -153,32 +154,194 @@
                     <button type="button" data-filter=".hardware">Hardware</button>
                     <button type="button" data-filter=".other">Other</button>
                 </div>
-
                 <div class="row grid">
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item software">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item hardware software">
                         <div class="our-project">
-                            <a href="#modal1" role="button" data-toggle="modal">
-                                <img src="./img/logos/clojure.png" alt="portfolio-1">
+                            <a href="#modal3" role="button" data-toggle="modal">
+                                <img class="img-fluid" src="./img/frc.jpg" alt="portfolio-3">
                             </a>
-                            
-                            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header text-center">
-                                            <h5 class="modal-title w-100 text-uppercase">Modal title</h5>
+                                            <h5 class="modal-title w-100 text-uppercase">FRC ROBOTICS TEAM 4015</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis magni quia nulla commodi, enim dolor quo delectus sed quam porro dolores exercitationem necessitatibus ab animi at suscipit ipsum fugiat rem!
-                                            <img src="/img/logos/ruby.png" alt="ruby">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quis?
-                                            <img class="img-fluid" src="/img/terminal.gif" alt="term">
-                                            <img class="img-fluid" src="/img/terminal.gif" alt="term">
-                                            <img class="img-fluid" src="/img/terminal.gif" alt="term">
-                                            <img class="img-fluid" src="/img/terminal.gif" alt="term">
-                                            
+                                            <p>
+                                                In 2020, alongside 20+ students from the St. Joseph Secondary School Robotics Team, we designed and built a 120-lb robot for the Infinite Recharge FIRST Robotics Competition.
+                                            </p>
+                                            <p>
+                                                The Design Process consisted of these 3 main stages:
+                                                <ol class="list">
+                                                    <li>
+                                                        Designing and Prototyping
+                                                    </li>
+                                                    <li>
+                                                        Machining and Assembly
+                                                    </li>
+                                                    <li>
+                                                        Programming and Testing
+                                                    </li>
+                                                </ol>
+                                            </p>
+                                            <h3>Design</h3>
+                                            <p>
+                                                The major subsystems that we decided to focus on for the competition were:
+                                                <ul class="list">
+                                                    <li>
+                                                        <b>Intake:</b> To intake the balls from the floor into the robot
+                                                    </li>
+                                                    <li>
+                                                        <b>Conveyor:</b> To receive the balls from the intake system and transfer them to the shooter
+                                                    </li>
+                                                    <li>
+                                                        <b>Shooter:</b> To shoot the balls at the desired angle to hit the target
+                                                    </li>
+                                                    <li>
+                                                        <b>Climber:</b> To pull the robot up off the ground onto a metal bar at the end of the game
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                            <p>
+                                                Using SolidEdge CAD software, I designed the pneumatically actuated active intake subsystem (after a lot of physical prototyping and testing), which used pneumatic cylinders to extend the intake roller outside of the perimeter of the robot, which had mecanum wheels along its shaft to funnel the balls into our robot to be conveyed one by one to the shooter.
+                                            </p>
+                                            <p>
+                                                Once the subsystems were all designed and assembled in CAD, we machined the parts and assembled the main structure of our robot and connected the electrical components.
+                                            </p>
+                                            <div id="frc-design" class="carousel slide" data-interval="false" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                  <li data-target="#frc-design" data-slide-to="0" class="active"></li>
+                                                  <li data-target="#frc-design" data-slide-to="1"></li>
+                                                  <li data-target="#frc-design" data-slide-to="2"></li>
+                                                  <li data-target="#frc-design" data-slide-to="3"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                  <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="img/intake.jpg">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img class="d-block w-100" src="img/renders.png">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img class="d-block w-100" src="img/frc3.jpg">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                        <iframe src="https://www.youtube.com/embed/XC4Ft_X9wI4" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#frc-design" role="button" data-slide="prev">
+                                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#frc-design" role="button" data-slide="next">
+                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                            <h3>Software</h3>
+                                            <p>
+                                                Once the robot and all the electrical components were connected, as the Programming Lead, I began to develop the software to control and connect all the subsystems that would eventually enable the robot to efficiently score points under both teleoperated (joystick) and autonomous control.
+                                            </p>
+                                            <p>
+                                                One of the challenges I wanted to tackle this year was to use vision processing to enable our robot to automatically align itself with the target, saving precious seconds and effort that would have been needed if drivers were to do it manually. The method used a camera mounted on the front of the robot, with a bright LED ring around it, to illuminate the retroreflective tape around the target and easily identify it in the images taken by the camera, which were processed through a custom-tuned OpenCV pipeline to extract the location and size of the target on the screen.
+                                            </p>
+                                            <p>
+                                                Once the size and location data was gathered, frame-by-frame, the robot would calculate its position relative to the target, and automatically adjust its position to keep the target at the center of its screen and at an optimal distance, using a control loop. The drivers were able to toggle the robot’s auto-alignment feature using the controllers, whenever they wanted to shoot at the target, which helped to reduce our cycle times, and increase our scoring chances.</p>
+                                            <p>
+                                                The code for our first(and sadly final) 2020 regular season competition can be found on <a href="https://github.com/team4015/FRC4015-2020">GitHub.</a>
+                                            </p>
+                                            <div id="vision-examples" class="carousel slide" data-interval="false" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                  <li data-target="#vision-examples" data-slide-to="0" class="active"></li>
+                                                  <li data-target="#vision-examples" data-slide-to="1"></li>
+                                                  <li data-target="#vision-examples" data-slide-to="2"></li>
+                                                  <li data-target="#vision-examples" data-slide-to="3"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                  <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="img/vision-demo.png">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img class="d-block w-100" src="img/cropped-led-hang.jpg">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                        <iframe src="https://www.youtube.com/embed/YzPljXL9pAs" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                        <iframe src="https://www.youtube.com/embed/prOTfw1wLH8" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#vision-examples" role="button" data-slide="prev">
+                                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#vision-examples" role="button" data-slide="next">
+                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                            <p>
+                                                <b>Team 4015:</b> Finalists at the 2020 Ontario District Georgian College event, and recipients of the Autonomous Award sponsored by Ford. 
+                                            </p>
+                                            <p>
+                                                Despite the season being cut short due to COVID-19, I’m extremely proud of what our team has accomplished, by making 2020 the most successful season in the team’s history. Through this experience, I was able to challenge myself, solve problem, and learn so many new skills, that will help me succeed in the future. 
+                                            </p>
+                                            <div class="button-row">
+                                                <a class="btn btn-primary ml-2 text-uppercase" href="https://www.thebluealliance.com/team/4015/2020">The Blue Alliance</a>
+                                                <a class="btn btn-dark ml-2 text-uppercase" href="https://github.com/team4015">Github</a>
+                                            </div>
+                                        </div>                                        
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">FRC Robotics Team 4015</h4>
+                                <span class="text-secondary">Java, Vision Processing, SolidEdge Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item software">
+                        <div class="our-project">
+                            <a href="#modal1" role="button" data-toggle="modal">
+                                <img src="./img/todo-img.png" alt="portfolio-1">
+                            </a>
+                            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-center">
+                                            <h5 class="modal-title w-100 text-uppercase">TODO LIST</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                To-Do List application created using HTML and CSS for frontend, and PHP with MySQL database for backend.
+                                            </p>
+                                            <div class="videoWrapper">
+                                                <iframe src="https://www.youtube.com/embed/m8tj0t9HZxo" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                            <p>
+                                                SQL database managed using MySQL:
+                                            </p>
+                                            <div class="imgWrapper">
+                                                <img src="./img/todo-server.png" alt="SQL Server" class="img-fluid">
+                                            </div>
+                                            <div class="button-row">
+                                                <a class="btn btn-dark m-0 text-uppercase" href="https://github.com/danielzyy/todo-list">Github</a>
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -187,41 +350,63 @@
                                 </div>
                             </div>
                             <div class="title py-4">
-                                <h4 class="text-uppercase">Face the Police</h4>
-                                <span class="text-secondary">Python, API</span>
+                                <h4 class="text-uppercase">Todo list database</h4>
+                                <span class="text-secondary">HTML, CSS, PHP, MySQL</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item hardware">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item software">
                         <div class="our-project">
                             <a href="#modal2" role="button" data-toggle="modal">
-                                <img class="img-fluid" src="./img/logos/csharp.png" alt="portfolio-2">
+                                <img class="img-fluid" src="./img/facethepolice.png" alt="portfolio-2">
                             </a>
+                            <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-center">
+                                            <h5 class="modal-title w-100 text-uppercase">Face the Police</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Facial recognition Python application that automatically detects and identifies subjects on camera to help first responders mitigate risk and make educated decisions before acting.
+                                                The application uses the facial_recognition API to match the subject's facial features to a locally stored database of images and infomation about them, and tracks their movements
+                                                in real time, and displays their information on the screen using a graphical interface.
+                                            </p>
+                                            <p>
+                                                More information about the inspiration and purpose of the project can be found on our <a href="http://danielye.me/facethepolice.github.io./">website</a>.
+                                                Which we designed with HTML and CSS.
+                                            </p>
+                                            <p>
+                                                This project won 2nd place and the best domain name from Domain.com award at HacktheHammer 2018.
+                                            </p>
+                                            <div class="button-row">
+                                                <a class="btn btn-info mr-2 text-uppercase" href="https://devpost.com/software/facethepolice-tech">Devpost</a>
+                                                <a class="btn btn-dark ml-2 text-uppercase" href="https://github.com/danielzyy/FaceThePolice">Github</a>
+                                            </div>
+                                        </div>                                        
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="title py-4">
-                                <h4 class="text-uppercase">Line Following Robot</h4>
-                                <span class="text-secondary">C, Integrated Circuits (Picket 2)</span>
+                                <h4 class="text-uppercase">Face the Police</h4>
+                                <span class="text-secondary">Python, OpenCV, API</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item hardware">
-                        <div class="our-project">
-                            <a href="#modal3" role="button" data-toggle="modal">
-                                <img class="img-fluid" src="./img/logos/go.png" alt="portfolio-3">
-                            </a>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">FRC Robotics: Intake Mechanism</h4>
-                                <span class="text-secondary">Solid Edge Modeling and Dimensioning</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item other">
+                    <!-- <div class="col-lg-4 col-md-6 col-sm-12 element-item other">
                         <div class="our-project">
                             <a href="#modal4" role="button" data-toggle="modal">
                                 <img class="img-fluid" src="./img/logos/node.png" alt="portfolio-4">
                             </a>
                             <div class="title py-4">
-                                <h4 class="text-uppercase">Phone Stand</h4>
-                                <span class="text-secondary">SolidWorks Modeling and Dimensioning</span>
+                                <h4 class="text-uppercase">Line Following Robot</h4>
+                                <span class="text-secondary">C, Integrated Circuits (Picket 2)</span>
                             </div>
                         </div>
                     </div>
@@ -231,7 +416,7 @@
                                 <img class="img-fluid" src="./img/terminal.gif" alt="portfolio-5">
                             </a>
                             <div class="title py-4">
-                                <h4 class="text-uppercase">Water Bottle Holder</h4>
+                                <h4 class="text-uppercase">Phone Stand</h4>
                                 <span class="text-secondary">SolidWorks Modeling and Dimensioning</span>
                             </div>
                         </div>
@@ -246,7 +431,7 @@
                                 <span class="text-secondary">SolidWorks Modeling and Dimensioning</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -329,7 +514,6 @@
                     
                 </div>
             </div>           
-            
         </div>
     </footer>
 

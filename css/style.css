@@ -340,13 +340,72 @@ button:hover
     }
 }
 
-.main .project-area .grid .our-project a:hover{
-    filter: brightness(1.1) drop-shadow(0px 0px 15px #ababab);
+.main .project-area .grid .our-project a img:hover{
+    filter: brightness(1.05) drop-shadow(0px 0px 10px #ababab);
     transition: 0.5s;
 }
 
 .main .project-area .grid .our-project .modal .modal-dialog .modal-content .modal-header h5{
     font: normal 700 25px/25px var(--roboto);
+}
+.modal .btn {
+    font-weight: 500;
+}
+.modal p,
+.modal h3{
+    margin: 1rem 1rem 0 1rem;
+}
+
+.modal .list{
+    margin-left: 1rem;
+}
+
+.modal .carousel{
+    margin: 1rem 0;
+}
+.modal .carousel img{
+    max-height: 27rem;
+}
+
+.modal .carousel-control-prev, 
+.modal  .carousel-control-next{
+    opacity: .9;
+    top: 50%;
+    bottom: 50%;
+}
+
+.modal .carousel-control-prev:hover, 
+.modal  .carousel-control-next:hover{
+    opacity: 1;
+}
+
+.imgWrapper {
+    text-align: center;
+    margin: 1rem 0;
+}
+.imgWrapper img{
+    width: 100%;
+    max-width: 30rem;
+}
+
+.videoWrapper {
+    position: relative;
+    margin: 1rem 0;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.videoWrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.button-row {
+    margin-top: 1rem;
+    text-align: center;
 }
 
 /* End Project Area */
