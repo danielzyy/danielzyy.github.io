@@ -161,10 +161,10 @@
                                 <img class="img-fluid" src="./img/frc.jpg" alt="portfolio-3">
                             </a>
                             <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-dialog modal-xl" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header text-center">
-                                            <h5 class="modal-title w-100 text-uppercase">FRC ROBOTICS TEAM 4015</h5>
+                                            <h4 class="modal-title w-100 text-uppercase">FRC ROBOTICS TEAM 4015</h4>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -248,12 +248,13 @@
                                                 Once the robot and all the electrical components were connected, as the Programming Lead, I began to develop the software to control and connect all the subsystems that would eventually enable the robot to efficiently score points under both teleoperated (joystick) and autonomous control.
                                             </p>
                                             <p>
-                                                One of the challenges I wanted to tackle this year was to use vision processing to enable our robot to automatically align itself with the target, saving precious seconds and effort that would have been needed if drivers were to do it manually. The method used a camera mounted on the front of the robot, with a bright LED ring around it, to illuminate the retroreflective tape around the target and easily identify it in the images taken by the camera, which were processed through a custom-tuned OpenCV pipeline to extract the location and size of the target on the screen.
+                                                One of the challenges I wanted to tackle this year was to use vision processing to enable our robot to automatically align itself with the target, saving precious seconds and effort that would have been needed if drivers were to do it manually. The method used a camera mounted on the front of the robot, with a bright LED ring around it, to illuminate the retroreflective tape around the target and easily identify it in the images taken by the camera. The images were processed frame-by-frame through a custom-tuned OpenCV pipeline to extract the location and size of the target on the screen.
                                             </p>
                                             <p>
-                                                Once the size and location data was gathered, frame-by-frame, the robot would calculate its position relative to the target, and automatically adjust its position to keep the target at the center of its screen and at an optimal distance, using a control loop. The drivers were able to toggle the robot’s auto-alignment feature using the controllers, whenever they wanted to shoot at the target, which helped to reduce our cycle times, and increase our scoring chances.</p>
+                                                Once the size and location data were gathered, the robot would calculate its position relative to the target, and automatically adjust its position to keep the target at the center of its screen and at an optimal distance, using a control loop. The drivers were able to toggle the robot’s auto-alignment feature using the controllers, whenever they wanted to shoot at the target, which helped to reduce our cycle times, and increase our scoring chances.
+                                            </p>
                                             <p>
-                                                The code for our first(and sadly final) 2020 regular season competition can be found on <a href="https://github.com/team4015/FRC4015-2020">GitHub.</a>
+                                                The code for our first (and sadly final) 2020 regular season competition can be found on <a href="https://github.com/team4015/FRC4015-2020">GitHub.</a>
                                             </p>
                                             <div id="vision-examples" class="carousel slide" data-interval="false" data-ride="carousel">
                                                 <ol class="carousel-indicators">
