@@ -71,7 +71,7 @@ button:active
 button:hover
 .btn:active,
 .btn.active,
-.main .project-area .grid .our-project a img:focus{
+.main .project-area .grid .our-project a:focus{
     outline: 0px !important;
     box-shadow: none !important;
 }
@@ -355,17 +355,21 @@ button:hover
     font-family: var(--roboto);
     font-weight: 500;
 }
-.modal p,
+.modal p{
+    margin: 0 1rem 1rem 1rem;
+    font-weight: 400;
+}
 .modal h3{
-    margin: 1rem 1rem 0 1rem;
+    margin: 0 1rem 1rem 1rem;
+    font-weight: 500;
 }
 
 .modal .list{
-    margin-left: 1rem;
+    margin-top: -1rem;
 }
 
 .modal .carousel{
-    margin: 1rem 1rem;
+    margin: 1rem 0;
 }
 .modal .carousel img{
     max-height: 40rem;
@@ -390,7 +394,6 @@ button:hover
         /*vertical position */
         top: 50%;
         transform: translateY(-50%);
-        
     }
 }
 
@@ -413,7 +416,6 @@ button:hover
         /*vertical position */
         top: 50%;
         transform: translateY(-50%);
-        
     }
 }
 
@@ -447,8 +449,10 @@ height: 100%;
 }
 
 .button-row {
-    margin-top: 1rem;
     text-align: center;
+}
+.button-row a{
+    margin-bottom: 1rem;
 }
 
 /* End Project Area */
