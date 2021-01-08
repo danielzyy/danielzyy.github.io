@@ -300,6 +300,7 @@ img:focus{
 }
 .main .project-area{
     padding-top: 4rem;
+    min-height: fit-content;
 }
 
 .main .project-area .button-group{
