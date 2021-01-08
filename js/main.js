@@ -52,21 +52,23 @@ $(document).ready(() => {
         css.type = "text/css";
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
         document.body.appendChild(css);
+
+        // Projects buttons
+        let $btns = $('.project-area .button-group button');
+
+        $btns.click(function(e){
+            $('.project-area .button-group button').removeClass('active');
+            e.target.classList.add('active');
+
+            let selector = $(e.target).attr('data-filter');
+            $('.project-area .grid').isotope({
+                filter: selector
+            });
+            return false;
+        })
+        $('.project-area .button-group #btn1').trigger('click');
     };
-    // Projects buttons
-    let $btns = $('.project-area .button-group button');
-
-    $btns.click(function(e){
-        $('.project-area .button-group button').removeClass('active');
-        e.target.classList.add('active');
-
-        let selector = $(e.target).attr('data-filter');
-        $('.project-area .grid').isotope({
-            filter: selector
-        });
-        return false;
-    })
-    $('.project-area .button-group #btn1').trigger('click');
+    
 
     //Sticky navbar
     let nav_offset_top = $('.header_area').height() + 50;

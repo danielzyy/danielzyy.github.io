@@ -303,6 +303,9 @@ img:focus{
     min-height: fit-content;
 }
 
+.main .project-area .grid{
+    min-height: fit-content;
+}
 .main .project-area .button-group{
     margin-top: 1rem;
     margin-bottom: 2rem;
