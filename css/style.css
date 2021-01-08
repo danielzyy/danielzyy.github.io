@@ -306,6 +306,7 @@ img:focus{
 .main .project-area .grid{
     min-height: fit-content;
 }
+
 .main .project-area .button-group{
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -372,11 +373,13 @@ img:focus{
 
 @media screen and (min-device-width: 992px) {
     .carousel-control-next-icon{
+        display: block !important;
         width: 2rem;
         height: 2rem;
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
     }
     .carousel-control-prev-icon{
+        display: block !important;
         width: 2rem;
         height: 2rem;
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
@@ -385,47 +388,49 @@ img:focus{
         background-color: rgba(255, 255, 255, 0.548);
         width: fit-content;
         height: fit-content;
-        top: 50%;
-        bottom: 50%;
+        top: 50% !important;
+        bottom: 50% !important;
         padding: 1rem;
     }
     .modal .carousel-control-prev{
         background-color: rgba(255, 255, 255, 0.548);
         width: fit-content;
         height: fit-content;
-        top: 50%;
-        bottom: 50%;
+        top: 50% !important;
+        bottom: 50% !important;
         padding: 1rem;
     }
 }
 
 @media screen and (max-device-width: 991px) {
     .carousel-control-next-icon{
+        display: block !important;
         width: 1rem;
         height: 1rem;
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
     }
     .carousel-control-prev-icon{
+        display: block !important;
         width: 1rem;
         height: 1rem;
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
     }
     .modal  .carousel-control-next{
         background-color: rgba(255, 255, 255, 0.548);
         width: fit-content;
         height: fit-content;
-        top: 50%;
-        bottom: 50%;
-        transform: translateY(-50%);
+        top: 50% !important;
+        bottom: 50% !important;
+        transform: translateY(-50%) !important;
         padding: 0.7rem;
     }
     .modal .carousel-control-prev{
         background-color: rgba(255, 255, 255, 0.548);
         width: fit-content;
         height: fit-content;
-        top: 50%;
-        bottom: 50%;
-        transform: translateY(-50%);
+        top: 50% !important;
+        bottom: 50% !important;
+        transform: translateY(-50%) !important;
         padding: 0.7rem;
     }
 }
