@@ -306,7 +306,10 @@ button:hover
 .main .project-area .grid{
     min-height: fit-content;
 }
-
+masonry: {
+    columnWidth: 50,
+    gutter: 10
+}
 .main .project-area .button-group{
     margin-top: 1rem;
     margin-bottom: 2rem;

@@ -222,12 +222,12 @@
                                                     <img class="d-block w-100" src="img/renders.png">
                                                   </div>
                                                   <div class="carousel-item">
-                                                    <img class="d-block w-100" src="img/frc3.jpg">
-                                                  </div>
-                                                  <div class="carousel-item">
                                                     <div class="embed-responsive embed-responsive-16by9">
                                                         <iframe src="https://www.youtube.com/embed/XC4Ft_X9wI4" frameborder="0" allowfullscreen></iframe>
                                                     </div>
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img class="d-block w-100" src="img/frc-process.jpg">
                                                   </div>
                                                 </div>
                                                 <a class="carousel-control-prev" href="#frc-design" role="button" data-slide="prev">
@@ -241,7 +241,7 @@
                                             </div>
                                             <h3>Software</h3>
                                             <p>
-                                                Once the robot and all the electrical components were connected, as the Programming Lead, I began to develop the software to control and connect all the subsystems that would eventually enable the robot to efficiently score points under both teleoperated (joystick) and autonomous control.
+                                                Once the robot and all the electrical components were connected, as the Programming Lead, I began to develop the software in Java to control and connect all the subsystems that would eventually enable the robot to efficiently score points under both teleoperated (joystick) and autonomous control.
                                             </p>
                                             <p>
                                                 One of the challenges I wanted to tackle this year was to use vision processing to enable our robot to automatically align itself with the target, saving precious seconds and effort that would have been needed if drivers were to do it manually. The method used a camera mounted on the front of the robot, with a bright LED ring around it, to illuminate the retroreflective tape around the target and easily identify it in the images taken by the camera. The images were processed frame-by-frame through a custom-tuned OpenCV pipeline to extract the location and size of the target on the screen.
@@ -261,12 +261,6 @@
                                                 </ol>
                                                 <div class="carousel-inner">
                                                   <div class="carousel-item active">
-                                                    <img class="d-block w-100" src="img/vision-demo.png">
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <img class="d-block w-100" src="img/cropped-led-hang.jpg">
-                                                  </div>
-                                                  <div class="carousel-item">
                                                     <div class="embed-responsive embed-responsive-16by9">
                                                         <iframe src="https://www.youtube.com/embed/YzPljXL9pAs" frameborder="0" allowfullscreen></iframe>
                                                     </div>
@@ -275,6 +269,12 @@
                                                     <div class="embed-responsive embed-responsive-16by9">
                                                         <iframe src="https://www.youtube.com/embed/prOTfw1wLH8" frameborder="0" allowfullscreen></iframe>
                                                     </div>
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                      <img class="d-block w-100" src="img/vision-demo.png">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                      <img class="d-block w-100" src="img/cropped-led-hang.jpg">
                                                   </div>
                                                 </div>
                                                 <a class="carousel-control-prev" href="#vision-examples" role="button" data-slide="prev">
@@ -315,17 +315,20 @@
                                 <img src="./img/todo-img.png" alt="portfolio-1">
                             </a>
                             <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-dialog modal-xl" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header text-center">
-                                            <h5 class="modal-title w-100 text-uppercase">TODO LIST</h5>
+                                            <h5 class="modal-title w-100 text-uppercase">TO-DO LIST</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
                                             <p>
-                                                To-Do List application created using HTML and CSS for frontend, and PHP with MySQL database for backend.
+                                                To-do list application created using HTML and CSS for frontend, and PHP with MySQL database for backend.
+                                            </p>
+                                            <p>
+                                                The user has the ability to add items to the list, mark them as completed, and delete them from the list altogether, with all these changes being processed in PHP to trigger specific MySQL commands to make the appropriate changes inside the SQL database.
                                             </p>
                                             <div class="videoWrapper">
                                                 <iframe src="https://www.youtube.com/embed/m8tj0t9HZxo" frameborder="0" allowfullscreen></iframe>
@@ -347,7 +350,7 @@
                                 </div>
                             </div>
                             <div class="title py-4">
-                                <h4 class="text-uppercase">Todo list database</h4>
+                                <h4 class="text-uppercase">To-do list database</h4>
                                 <span class="text-secondary">HTML, CSS, PHP, MySQL</span>
                             </div>
                         </div>
@@ -396,39 +399,171 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-4 col-md-6 col-sm-12 element-item other">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item hardware">
                         <div class="our-project">
                             <a href="#modal4" role="button" data-toggle="modal">
-                                <img class="img-fluid" src="./img/logos/node.png" alt="portfolio-4">
+                                <img class="img-fluid" src="./img/self-balance.png" alt="portfolio-6">
                             </a>
+                            <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-center">
+                                            <h5 class="modal-title w-100 text-uppercase">Self-Balancing Robot</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                A two-wheeled robot that is capable of self-balancing using readings from a MPU6050 inertial measurement unit (IMU), which is connected to the Arduino via I2C libraries. 
+                                                The two brushed DC gearmotors are driven by the L298N dual H-bridge connected to the Arduino. 
+                                                A PID control loop was used to control the motors based off of the readings from the sensor, to help the robot maintain its balance by driving in the direction that it is falling.
+                                            </p>
+                                            <p>
+                                                The exact PID values still need a bit of tuning, as the robot is able to maintain its balance, but with a lot of small back and fourth vibrations.
+                                            </p>
+                                            <p>
+                                                The first iteration of the design used a single Memsic 2125 Accelerometer instead of an IMU, which severely limited the data collecting capabilities, and so the robot could not react fast enough to the change in tilt angle and would fall over almost immediately.
+                                                The second iteration, which used the MPU6050 was also unable to balance itself due to the center of gravity of the robot being too low, closer to the pivot point, which would cause the robot to fall over faster, before the sensor at the top of the robot could react. 
+                                                In the latest iteration, the heavy battery packs are now placed on top, which increases its rotational inertia, and causes it to fall slower. Additionally, the sensor is placed lower, and being closer to the axis of rotation, it allows the sensor to get more accurate readings and respond faster than before.
+                                                Both these changes dramatically helped the robot be more stable, and easier to self-balance.
+                                            </p>
+                                            <div class="videoWrapper">
+                                                <iframe src="https://www.youtube.com/embed/3DTq_axHEOw" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>                                        
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="title py-4">
-                                <h4 class="text-uppercase">Line Following Robot</h4>
-                                <span class="text-secondary">C, Integrated Circuits (Picket 2)</span>
+                                <h4 class="text-uppercase">Self-Balancing Robot</h4>
+                                <span class="text-secondary">C/C++, Arduino, MPU6050, PID Control</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item other">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item hardware">
                         <div class="our-project">
                             <a href="#modal5" role="button" data-toggle="modal">
-                                <img class="img-fluid" src="./img/terminal.gif" alt="portfolio-5">
+                                <img class="img-fluid" src="./img/line-follower.png" alt="portfolio-4">
                             </a>
+                            <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-center">
+                                            <h5 class="modal-title w-100 text-uppercase">Line Following Robot</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                A line following robot which uses two infrared (IR) sensors to detect whether the robot has reached a line on either sides, and will turn the motors accordingly to steer the robot away from that side where it is touching the line, so that it may maintain its course on the line.
+                                                The two DC gearmotors are driven by an H-bridge chip, which is controlled by a PIC18F2550 microcontroller programmed using the PICkit 2 in C.
+                                            </p>
+                                            <p>
+                                                The robot is able to detect when it has reached a corner by sensing if both IR sensors have been triggered simultaneously, and this logic could be extended to allow the robot to read a barcode consisting of a number of perpendicular lines at the end of the track. 
+                                            </p>
+                                            <p>
+                                                In this demo, the robot starts in a square in one corner, and when the button is pressed, it travels its way to the barcode on the opposite corner of the field, following the pre-designated lines around the edge. Then the robot reads the number of thinner lines in between the two thick lines and indicates it by lighting up the same number of LEDs. The robot will then travel to 1 out of the 4 drop-off locations in the center of the field corresponding to the number of lines read, to drop off a virtual package (represented by the Yellow LED being turned off). Finally, the robot will return to the starting square, and end the sequence. 
+                                            </p>
+                                            <div id="line-follower" class="carousel slide" data-interval="false" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                  <li data-target="#line-follower" data-slide-to="0" class="active"></li>
+                                                  <li data-target="#line-follower" data-slide-to="1"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                  <div class="carousel-item active">
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                        <iframe src="https://www.youtube.com/embed/QpoqdU0vJxI" frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                      <img class="d-block w-100" src="img/line-follower-circuit.JPG">
+                                                  </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#line-follower" role="button" data-slide="prev">
+                                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#line-follower" role="button" data-slide="next">
+                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>                                        
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="title py-4">
-                                <h4 class="text-uppercase">Phone Stand</h4>
-                                <span class="text-secondary">SolidWorks Modeling and Dimensioning</span>
+                                <h4 class="text-uppercase">Line Following Robot</h4>
+                                <span class="text-secondary">C, Integrated Circuits (PICkit 2), IR Sensor</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 element-item other">
                         <div class="our-project">
                             <a href="#modal6" role="button" data-toggle="modal">
-                                <img class="img-fluid" src="./img/logos/python.png" alt="portfolio-6">
+                                <img class="img-fluid" src="./img/phone-stand.png" alt="portfolio-5">
                             </a>
+                            <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header text-center">
+                                            <h5 class="modal-title w-100 text-uppercase">Phone Stand</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Using SolidWorks, I designed a foldable phone stand capable of three different upright positions for adjustability, and suitable for phones less than 10mm in thickness, to be 3D printed.
+                                                When a phone is placed on the stand, its center of mass is located at the center of the stand, to ensure that the stand remains upright.
+                                            </p>
+                                            <p>
+                                                The design uses three separate parts linked together by two hinges, to allow for the stand to be easily folded for transport. Additionally, the stand requires no assembly, as it is 3D printed in its folded position all as one assembly, due to the interlocking hinges.
+                                            </p>
+                                            <div id="phone-stand" class="carousel slide" data-interval="false" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                  <li data-target="#phone-stand" data-slide-to="0" class="active"></li>
+                                                  <li data-target="#phone-stand" data-slide-to="1"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                  <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="img/phone-stand-render.JPG">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img class="d-block w-100" src="img/stand-folded.png">
+                                                  </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#phone-stand" role="button" data-slide="prev">
+                                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#phone-stand" role="button" data-slide="next">
+                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>                                        
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="title py-4">
-                                <h4 class="text-uppercase">Marble Maze</h4>
+                                <h4 class="text-uppercase">Phone Stand</h4>
                                 <span class="text-secondary">SolidWorks Modeling and Dimensioning</span>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
+                    
                 </div>
             </div>
         </section>
