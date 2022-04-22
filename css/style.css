@@ -487,14 +487,14 @@ height: 100%;
     }
     .socials li a {
         white-space: nowrap;
-        line-height: 75px;
+        line-height: 60px;
         display: block;
         text-decoration: none;
         font-size: 18px;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
     .socials img{
-        width: 60px;
+        width: 45px;
     }
 }
 
